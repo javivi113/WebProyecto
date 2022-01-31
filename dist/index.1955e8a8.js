@@ -1,7 +1,9 @@
 document.getElementById("aInicio").addEventListener("click", cambioIni);
 document.getElementById("aMisSitios").addEventListener("click", cambioSit);
+document.getElementById("aApi").addEventListener("click", apiInicioSes);
 $("#dMisSitios").hide();
 $("#dVisializar").hide();
+$(".inicioPanel").hide();
 function cambioIni() {
     $("#dInicio").show();
     $("#dMisSitios").hide();
@@ -23,6 +25,11 @@ function cambioSit() {
         document.getElementById("dBalizasGuar").innerHTML = "";
         GuardarDatosApi();
     }
+}
+function apiInicioSes() {
+    let lsSesion = localStorage.getItem("Sesion");
+    if (lsSesion == undefined) $(".inicioPanel").slideToggle(100);
+    else window.location = `${url}/api/Tiempo`;
 }
 
 //# sourceMappingURL=index.1955e8a8.js.map
