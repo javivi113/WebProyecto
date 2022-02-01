@@ -1,0 +1,182 @@
+$AzulOscuro: rgba(37,63,133,1)
+$AzulOscuroTransp: rgba(37,63,133,0.75)
+$Azul: rgba(65,96,230,1)
+$Blanco: rgba(251,250,240,1)
+$Negro: rgba(5,10,10,1)
+$NegroTransp: rgba(0,0,0,0.8)
+$Rojo: rgba(200,30,50,1)
+$Gris: rgba(120,130,135,1)
+
+.dLogin 
+    background-color: $NegroTransp
+    display: flex
+    height: 100vh
+    align-items: center
+    justify-content: center
+    .inicioPanel
+        background-color: $AzulOscuroTransp
+        height: auto
+        width: 27%
+        padding: 2%
+        margin: auto auto
+        border: 1px solid $Blanco
+        border-radius: 10px
+        box-shadow: 5px 5px 0px 0px $Negro
+        h1
+            color: $Blanco
+        span
+            color: $Blanco
+        .btnSesion
+            margin: 10px
+            border: 1px solid $Negro
+            border-radius: 10px
+            padding: 5px
+            background-color: $Blanco
+            color: $Negro
+        .btnSesion:hover
+            background-color: $Negro
+            color: $Blanco
+        p
+            color: $Blanco
+            span
+                color: $Gris
+                text-decoration: underline
+            span:hover
+                color: $Negro
+            
+
+@media screen and ( max-width: 1600px )
+    .inicioPanel
+        left: 55%
+
+#dDragMovible
+    border: 1px solid $Negro
+nav
+    position: fixed
+    overflow: hidden
+    background: linear-gradient(0deg, $AzulOscuro 0%, $Azul 90%)
+    height: 50px
+    top: 0
+    width: 100%
+    ul
+        list-style: none
+        img
+            height: 40px
+            width: 40px
+        li
+            display: inline-block
+            float: left
+            color: $Blanco
+            font-size: 25px
+
+            p
+                text-decoration: none
+                font-size: 28px
+                color: $Blanco
+                margin-left: 10rem
+            p:hover
+                font-size: 28px
+                color: $Negro
+                cursor: pointer
+
+.iEstadoTiempo
+    width: 60px
+    height: 60px
+#dMisSitios
+    margin: 55px
+    ul
+        color: $Negro
+        list-style: none
+        li
+            display: inline-block
+            float: left
+            color: $Negro
+            font-size: 25px
+            margin-right: 20px
+    .balizasGuardada
+
+        border: 1px solid $Negro
+        box-shadow: 3px 3px 0px 0px $Gris
+        border-radius: 10px
+        margin: 4%
+        text-align: center
+        .hLocalidadGuardada:first-letter
+            text-transform: uppercase
+
+#dVerTiempo
+    width: 30%
+
+#dVisializar
+    margin: 55px
+
+.iconoDragabble
+    font-size: 50px
+    text-align: center
+
+.iconoDragabble:hover
+    font-size: 55px
+    border: 1px solid $Negro
+    box-shadow: 3px 7px 0px 0px grey
+    border-radius: 10px 10px 10px 10px
+
+.dDatoParam
+    margin-top: 1%
+    margin-bottom: 1%
+    display: none
+
+.iconoPanel
+    font-size: 25px
+    span
+        margin-left: 2%
+        font-size: 20px
+
+.dElemDrag
+    border: 5px solid $AzulOscuro
+    border-radius: 10px 10px 10px 10px
+    box-shadow: 10px 10px 0px 0px $Azul
+    margin: 15px
+    padding: 25px
+
+#iBasura
+    color: $Rojo
+    margin-bottom: 10px
+    float: right
+    font-size: 40px
+    display: none
+.dFunMapas
+    margin: 0 auto
+    margin-top: 8%
+
+#map
+    width: 900px
+    height: 500px
+    border: 5px solid $Negro
+    border-radius: 10px
+
+#dOpciones
+    width: 350px
+    height: 175px
+    border-left: 3px solid $Negro
+    border-right: 3px solid $Negro
+    border-bottom: 3px solid $Negro
+    display: none
+    margin: auto
+
+.pDBaliza
+    text-align: center
+.pDBaliza:first-letter
+    text-transform: uppercase
+
+#dBalSele
+    margin: auto
+.btnOpciones
+    border-radius: 10px 10px 10px 10px
+    border: 1px solid $Negro
+    background-color: $Azul
+    width: 100px
+    height: 50px
+    margin-left: 13%
+    margin-top: 7%
+.btnExit
+    float: right
+    font-size: 10px
